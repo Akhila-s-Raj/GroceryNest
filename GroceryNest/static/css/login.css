@@ -1,0 +1,88 @@
+/* Reset some basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styles (same as grocery_index.html) */
+nav {
+    background-color: rgb(255, 255, 255); /* Set background to white */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Optional: Add a subtle border at the bottom */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 50px; /* Adjust the logo height as needed */
+}
+
+.nav-options a {
+    color: black; /* Set text color to black */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.nav-options a:hover {
+    text-decoration: underline;
+}
+
+/* Container for login form */
+.login-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: calc(100vh - 70px); /* Full height minus the height of the navigation bar */
+    padding: 20px; /* Optional padding */
+}
+
+/* Login form styles */
+form {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Rounded corners */
+    width: 300px; /* Fixed width for the form */
+}
+
+form div {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 14px; /* Label font size */
+}
+
+form input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Input padding */
+    border: 1px solid #ccc; /* Input border */
+    border-radius: 4px; /* Rounded input corners */
+}
+
+form button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Button padding */
+    background-color: rgb(52, 152, 219); /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded button corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+form button:hover {
+    background-color: rgb(41, 128, 185); /* Darker shade on hover */
+}
+
+/* Additional link styles */
+p {
+    text-align: center; /* Center align the paragraph */
+}

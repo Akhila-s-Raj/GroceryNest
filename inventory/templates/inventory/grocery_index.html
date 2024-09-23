@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroceryNest</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/scripts.js' %}" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
+            </div>
+            <div class="nav-options">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="{% url 'login' %}">Login</a>
+
+             
+
+            </div>
+        </div>
+    </nav>
+    <div class="hero-image">
+        <img src="{% static 'images/grocery_home2.png' %}" alt="Grocery Home">
+
+    </div>
+
+    <div class="product-section">
+        <div class="product">
+            <img src="{% static 'images/product1.jpg' %}" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>$10.00</p>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/product2.jpg' %}" alt="Product 2">
+            <h3>Product Name 2</h3>
+            <p>$15.00</p>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/product3.jpg' %}" alt="Product 3">
+            <h3>Product Name 3</h3>
+            <p>$20.00</p>
+        </div>
+        <!-- Add more product divs as needed -->
+    </div>
+    
+</body>
+</html>
