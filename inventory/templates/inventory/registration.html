@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}">  <!-- Link to the login.css -->
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
+            </div>
+            <div class="nav-options">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="{% url 'login' %}">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2>Registration</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="mobile" placeholder="Mobile" required>
+            <input type="date" name="dob" placeholder="Date of Birth" required>
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="submit" value="Register">
+        </form>
+        <p class="footer">Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+    </div>
+</body>
+</html>

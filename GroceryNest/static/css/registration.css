@@ -1,0 +1,62 @@
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #4CAF50; /* Green background */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left; /* Align links to the left */
+    display: block;
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 14px 16px; /* Padding */
+    text-decoration: none; /* No underline */
+}
+
+.navbar a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Registration Form Container */
+.container {
+    width: 50%; /* Width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+/* Form Field Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding */
+    margin: 8px 0; /* Margin */
+    display: inline-block; /* Inline block display */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Box sizing */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 14px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Centered text */
+    margin-top: 20px; /* Margin on top */
+}
